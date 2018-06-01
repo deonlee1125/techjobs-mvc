@@ -5,6 +5,7 @@
 <body>
 
     <div th:replace="fragments :: page-header"></div>
+    <h3 th:replace="fragments :: results-tally"> </h3>
 
     <div class="container body-content">
         <h1 th:text="${#strings.capitalizeWords(title)}"></h1>

@@ -9,7 +9,7 @@
 <div class="container body-content">
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
-
+    <h3 th:replace="fragments :: results-tally"> </h3>
     <table th:replace="fragments :: job-table">
     </table>
 

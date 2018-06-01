@@ -33,7 +33,7 @@ public class SearchController {
             model.addAttribute("columns", ListController.columnChoices);
             model.addAttribute("title", "All Jobs");
             model.addAttribute("jobs", jobs);
-            //model.addAttribute("searchTerm", searchTerm);
+            model.addAttribute("searchTerm", searchTerm);
             return "search";
 
         } else {
@@ -41,7 +41,7 @@ public class SearchController {
             model.addAttribute("columns", ListController.columnChoices);
             //model.addAttribute("title", "All " + searchType + " Values");
             model.addAttribute("jobs", jobs);
-            //model.addAttribute("searchTerm", searchTerm);
+            model.addAttribute("searchTerm", searchTerm);
             return "search";
 
         }
